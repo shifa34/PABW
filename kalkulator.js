@@ -16,7 +16,7 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center; /* Menengahkan konten */
+        text-align: center;
     }
     input[type="number"] {
         width: 100%;
@@ -27,7 +27,7 @@
     .button-container {
         display: flex;
         gap: 10px;
-        justify-content: center; /* Menengahkan tombol */
+        justify-content: center; 
     }
     .button-container button {
         padding: 10px;
@@ -57,6 +57,7 @@
     <input type="number" id="num2" placeholder="Masukkan angka kedua">
     <div class="button-container">
         <button onclick="calculate('+')"><i class="fas fa-plus"></i></button>
+        <button onclick="calculate('-')"><i class="fas fa-minus"></i></button>
     </div>
     <p id="result">Hasil: </p>
 </div>
@@ -69,6 +70,9 @@
         if (operator === '+') {
             result = num1 + num2;
             document.getElementById('result').innerText = 'Hasil: ' + num1 + ' + ' + num2 + ' = ' + result;
+        } else if (operator === '-') {
+            result = num1 - num2;
+            document.getElementById('result').innerText = 'Hasil: ' + num1 + ' - ' + num2 + ' = ' + result;
         }
     }
 </script>
