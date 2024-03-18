@@ -58,6 +58,7 @@
     <div class="button-container">
         <button onclick="calculate('+')"><i class="fas fa-plus"></i></button>
         <button onclick="calculate('-')"><i class="fas fa-minus"></i></button>
+        <button onclick="calculate('*')"><i class="fas fa-times"></i></button>
     </div>
     <p id="result">Hasil: </p>
 </div>
@@ -73,6 +74,9 @@
         } else if (operator === '-') {
             result = num1 - num2;
             document.getElementById('result').innerText = 'Hasil: ' + num1 + ' - ' + num2 + ' = ' + result;
+        } else if (operator === '*') {
+            result = num1 * num2;
+            document.getElementById('result').innerText = 'Hasil: ' + num1 + ' x ' + num2 + ' = ' + result;
         }
     }
 </script>
