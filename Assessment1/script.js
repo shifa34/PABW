@@ -23,15 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const jumlah = parseInt(jumlahField.value);
         const pilihan = pilihanSelect.value;
 
+        if (isNaN(jumlah) || jumlah <= 0) {
+            alert('Masukkan jumlah buku!');
+            return;
+        }
+
         let buku = [
-            { "nama": "sherlock", "jumlah":2},
-            { "nama": "lupin", "jumlah":2},
-            { "nama": "aladin", "jumlah":2 }
+            { "nama": "sherlock", "jumlah": 2 },
+            { "nama": "lupin", "jumlah": 2 },
+            { "nama": "aladin", "jumlah": 2 }
         ];
-
-        jumlahField.value = '';
-
-        alert('Jumlah buku berhasil diSubmit!');
 
         console.log('Array buku:', buku);
     });
