@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        alert('Buku ditemukan!');
+        alert('Silahkan ambil buku Anda.');
 
         console.log('Array buku:', buku);
     });
