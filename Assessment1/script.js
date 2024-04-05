@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
             { "nama": "aladin", "jumlah": 2 }
         ];
 
+        alert('Buku ditemukan');
+
         console.log('Array buku:', buku);
     });
 });
