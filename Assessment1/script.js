@@ -28,13 +28,24 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        let buku = [
+        let buku = [    
             { "nama": "sherlock", "jumlah": 2 },
             { "nama": "lupin", "jumlah": 2 },
             { "nama": "aladin", "jumlah": 2 }
         ];
 
-        alert('Buku ditemukan');
+        let bukuDitemukan = buku.find(item => item.nama === pilihan);
+        if (!bukuDitemukan) {
+            alert('Buku tidak ditemukan!');
+            return;
+        }
+        
+        if (jumlah > bukuDitemukan.jumlah) {
+            alert('Jumlah buku tidak tersedia!');
+            return;
+        }
+
+        alert('Buku ditemukan!');
 
         console.log('Array buku:', buku);
     });
