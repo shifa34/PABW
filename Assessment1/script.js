@@ -24,10 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const pilihan = pilihanSelect.value;
 
         let buku = [
-            { "nama": "sherlock", "jumlah": jumlah },
-            { "nama": "lupin", "jumlah": jumlah },
-            { "nama": "aladin", "jumlah": jumlah }
+            { "nama": "sherlock", "jumlah":2},
+            { "nama": "lupin", "jumlah":2},
+            { "nama": "aladin", "jumlah":2 }
         ];
+
+        jumlahField.value = '';
+
+        alert('Jumlah buku berhasil diSubmit!');
 
         console.log('Array buku:', buku);
     });
