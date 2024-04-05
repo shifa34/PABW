@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const profileImg = document.getElementById('profile-img');
     const profileInfo = document.getElementById('profile-info');
+    const jumlahField = document.getElementById('jumlah');
+    const pilihanSelect = document.getElementById('pilihan');
+    const tombol = document.getElementById('tombol');
 
     const dataMahasiswa = {
         nama: 'Arshifa Demuna',
@@ -15,4 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>NIM: ${dataMahasiswa.nim}</p>
         <p>Kelas: ${dataMahasiswa.kelas}</p>
     `;
+
+    tombol.addEventListener('click', function () {
+        const jumlah = parseInt(jumlahField.value);
+        const pilihan = pilihanSelect.value;
+
+        let buku = [
+            { "nama": "sherlock", "jumlah": jumlah },
+            { "nama": "lupin", "jumlah": jumlah },
+            { "nama": "aladin", "jumlah": jumlah }
+        ];
+
+        console.log('Array buku:', buku);
+    });
 });
