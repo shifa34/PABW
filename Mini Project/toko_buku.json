@@ -1,0 +1,10 @@
+{
+    "nama_toko": "Toko Buku Serba Ada",
+    "pengarang": "John Doe",
+    "alamat": "Jl. Buku No. 123, Kota Buku",
+    "koleksi_buku": [
+        {"judul": "Misteri Buku Hilang", "tahun_terbit": 2020},
+        {"judul": "Petualangan Penulis Pemula", "tahun_terbit": 2021},
+        {"judul": "Rahasia Penulis Terkenal", "tahun_terbit": 2019}
+    ]
+}
